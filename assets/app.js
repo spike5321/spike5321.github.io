@@ -281,6 +281,15 @@
         var d = document.querySelector('meta[name="description"]');
         if (d && meta.summary) d.setAttribute("content", meta.summary);
 
+        // 同步 OG / Twitter 标签，方便分享时显示正确的标题/描述
+        var pageUrl = "https://spike5321.github.io/post.html?p=" + encodeURIComponent(slug);
+        var setMeta = function (sel, val) { var m = document.querySelector(sel); if (m && val) m.setAttribute("content", val); };
+        setMeta('meta[property="og:title"]', meta.title);
+        setMeta('meta[property="og:description"]', meta.summary || S.tagline || "");
+        setMeta('meta[property="og:url"]', pageUrl);
+        setMeta('meta[name="twitter:title"]', meta.title);
+        setMeta('meta[name="twitter:description"]', meta.summary || S.tagline || "");
+
         var toc = res.headings.filter(function (h) { return h.level === 2 || h.level === 3; });
         var tocHtml = toc.length >= 3
           ? '<nav class="toc"><div class="toc-title">目录</div><ul>' + toc.map(function (h) {
