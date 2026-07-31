@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>首页</title>
+<meta name="description" content="个人博客">
+<link rel="stylesheet" href="assets/style.css">
+<script src="config.js"></script>
+<script>document.title = (window.SITE && SITE.title) || "首页";</script>
+</head>
+<body data-page="home">
+
+<header class="nav" id="nav"></header>
+
+<main class="wrap">
+  <section class="hero" id="hero"></section>
+
+  <div class="toolbar">
+    <input class="search" id="search" type="search" placeholder="搜索文章标题、摘要或标签…" autocomplete="off">
+  </div>
+  <div class="tagbar" id="tags" style="margin-bottom:26px"></div>
+
+  <ul class="post-list" id="list"></ul>
+  <div class="pager" id="pager"></div>
+
+  <footer class="foot" id="foot"></footer>
+</main>
+
+<script src="assets/markdown.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
