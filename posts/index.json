@@ -1,5 +1,12 @@
 [
   {
+    "slug": "workbuddy-remielle-deskpet",
+    "title": "给 AI 助手配了一只桌宠，它会跟着工作状态动起来",
+    "date": "2026-08-04",
+    "summary": "WorkBuddy 在工作还是在发呆，桌宠一眼就能看出来。讲讲这只桌宠是怎么'听懂' AI 状态的。",
+    "tags": ["折腾", "桌宠"]
+  },
+  {
     "slug": "hello-world",
     "title": "你好，这是我的第一篇文章",
     "date": "2026-07-26",
