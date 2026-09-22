@@ -1,5 +1,12 @@
 [
   {
+    "slug": "mockmate-interview-agent",
+    "title": "我做了个模拟面试官，它能自己决定下一句问什么",
+    "date": "2026-09-22",
+    "summary": "市面上的模拟面试大多是固定流程，我想要的是一段能自己拿主意的循环。记一下做 MockMate 的过程，和四个修了很久的坑。",
+    "tags": ["Agent", "项目"]
+  },
+  {
     "slug": "workbuddy-remielle-deskpet",
     "title": "给 AI 助手配了一只桌宠，它会跟着工作状态动起来",
     "date": "2026-08-04",
